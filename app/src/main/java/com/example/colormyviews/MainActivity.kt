@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
          clickableViews = listOf(box_one_text, box_two_text, box_three_text,
-            box_four_text, box_five_text, mainView)
+            box_four_text, box_five_text, mainView, red_button, green_button, yellow_button)
 
         setListeners()
 
@@ -40,7 +40,31 @@ class MainActivity : AppCompatActivity() {
             R.id.box_four_text -> view.setBackgroundColor(Color.YELLOW)
             R.id.box_five_text -> view.setBackgroundColor(Color.MAGENTA)
 
+            R.id.red_button -> box_three_text.setBackgroundResource(R.color.button_red)
+            R.id.yellow_button -> box_four_text.setBackgroundResource(R.color.button_yellow)
+            R.id.green_button -> box_five_text.setBackgroundResource(R.color.button_green)
+
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
